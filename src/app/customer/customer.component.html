@@ -1,0 +1,13 @@
+<ul>
+  <li *ngFor="let cust of customers"
+    [class.selected]="cust === selectedCustomer" (click)="onSelect(cust)">
+      <!-- () 소괄호(event binding)-->
+
+      <!--{{}} 이중 중괄호(interpolation) : component의 값을 고대로 찍는다-->
+      <h4>{{cust.id}} - {{cust.firstName}} {{cust.lastName}}</h4> 
+  </li>
+</ul>
+
+<!--[] 대괄호(property binding) : customer라는 attribute에 component의 selectedCustomer를 대입-->
+<!-- app-customer-details는 자식 component다-->
+<app-customer-details [customer]="selectedCustomer"> </app-customer-details>

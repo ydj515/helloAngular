@@ -25,3 +25,16 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+### 명령어
+ng g service data
+npm start
+npm install rxjs-compat@6 --save
+npm install @angular/http@7 --save
+
+컴포넌트 생성하면 자동으로 app.module.ts에 import와
+NgModule 의 declaration에 자동으로 추가
+ng g component customer
+ng g component customerDetails
+ng g component createCustomer
+ng g component searchCustomer
